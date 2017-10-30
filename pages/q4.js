@@ -23,7 +23,7 @@ animate () {
     )
   }
   Animated.sequence([
-  createAnimation(this.fade, 3000),
+  createAnimation(this.fade, 4000),
   Animated.loop(
   createAnimation(this.spinValue, 3000))
   ]).start()
@@ -63,7 +63,7 @@ export default class ButtonPopupScreen extends React.Component {
         Animated.timing(
             this.fadeButton,{
                 toValue: 1,
-                duration: 3000
+                duration: 4000
             }
         ).start()
     }
@@ -86,7 +86,7 @@ export default class ButtonPopupScreen extends React.Component {
                        animationInTiming={1000}
                        animationOutTiming={1000}>
                     <RotateSquare></RotateSquare>
-                        <Animated.View style={{opacity: fade1}}>
+                        <Animated.View style={[styles.modalContent,{opacity: fade1}]}>
                             <Button title="Close" onPress={dismiss}/>
                         </Animated.View>
                 </Modal>
