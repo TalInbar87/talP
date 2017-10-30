@@ -54,7 +54,7 @@ export default class q1 extends React.Component {
                 <Modal isVisible={this.state.isModalVisible}
                        animationIn="slideInDown"
                        animationInTiming={1000}
-                       animationOutTiming={1000}>
+                       animationOutTiming={3000}>
                     <FadeInView>
                         <Text>3 seconds and bye bye</Text>
                     </FadeInView>
